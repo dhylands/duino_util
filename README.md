@@ -1,4 +1,4 @@
-# DuinoUtil
+# duino_util
 [TOC]
 A collection of miscellaneous utility classes and functions.
 

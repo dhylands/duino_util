@@ -111,3 +111,26 @@ struct Bits {
 
     T value;  //!< Value containing bits.
 };
+
+/**
+ * @brief An implementation of strncpy_s.
+ * @details This is similar to strncpy but strncpy_s ensures that the result is null terminated.
+ * @return 0 if `src` fits into `dst`, ERANGE if `dst` gets truncated.
+ */
+
+int strncpy_s(
+    char* dst,        //!< [out] Place to store the copied string.
+    char const* src,  //!< [in] String to copy.
+    size_t maxlen     //!< [in] Size of `dst`.
+);
+
+//! Convert an enumeration to it's underlying type.
+//! @tparam ENUM - enumeration to get underlyng type of.
+//! @param e
+//! @returns The value of the enumeration.
+template <typename ENUM>
+[[nodiscard]] constexpr auto to_underlying(ENUM const e  //!< [in] Enum to convert.
+) {
+    static_assert(std::is_enum_v<ENUM>);
+    return static_cast<std::underlying_type_t<ENUM>>(e);
+}

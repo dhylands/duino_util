@@ -8,13 +8,14 @@
  *
  ****************************************************************************/
 /**
- *   @file   DuinoUtil.h
+ *   @file   strncpy_s_Test.cpp
  *
- *   @brief  Arduino Utility functions
+ *   @brief  Tests for functions in AsciiHex.cpp
  *
  ****************************************************************************/
 
-#pragma once
+#include <gtest/gtest.h>
 
-#include "TimedActionSequence.h"
 #include "Util.h"
+
+TEST(strncpy_s_Test, Test) {}
