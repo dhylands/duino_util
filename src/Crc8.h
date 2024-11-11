@@ -28,12 +28,14 @@
 
 //! Calculates the CRC-8 used as part of SMBus.
 //! CRC-8 is defined to be x^8 + x^2 + x + 1
+//! @returns the updated CRC.
 uint8_t Crc8(
     uint8_t crc,  //!< [in] CRC accumulated so far.
     uint8_t data  //!< [in] Byte to accumulate into the CRC.
 );
 
 //! Calculates the CRC-8 used as part of SMBus over a block of memory.
+//! @returns the updated CRC.
 uint8_t Crc8(
     uint8_t crc,         //!< [in] CRC accumulated so far.
     size_t len,          //!< [in] Amount of data to accumulate CRC over.

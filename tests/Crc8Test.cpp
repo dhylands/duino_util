@@ -19,7 +19,7 @@
 #include "Crc8.h"
 #include "Util.h"
 
-uint8_t data[] = {0xca, 0xfc, 0x02, 0x00, 0x00};
+static uint8_t data[] = {0xca, 0xfc, 0x02, 0x00, 0x00};
 
 //! Run some CRC's over some data.
 TEST(CrcTest, CrcTest) {

@@ -1,3 +1,5 @@
+DOC_EXCLUDE += src/ScopeGuard.h
+
 SOURCES_CPP += \
 	AsciiHex.cpp \
 	Crc8.cpp \
