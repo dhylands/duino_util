@@ -32,5 +32,5 @@ using ByteBuffer = std::vector<uint8_t>;
 //!     @endcode
 //      `bytes[0] will contain 0x12 and bytes[1] will contain 0x34.
 //! @returns a uint8_t vector containing the bytes parsed from the string.
-ByteBuffer AsciiHexToBinary(const char* str  //!< [in] String to convert.
+ByteBuffer AsciiHexToBinary(char const* str  //!< [in] String to convert.
 );

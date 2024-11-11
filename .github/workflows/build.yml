@@ -9,21 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./libraries/DuinoUtil
+        working-directory: ./libraries/duinno_util
     steps:
 
     # Checkout the repository
 
-    - name: Checkout DuinoUtil
+    - name: Checkout duinno_util
       uses: actions/checkout@v4
       with:
-        path: libraries/DuinoUtil
+        path: libraries/duinno_util
 
-    - name: Checkout DuinoMakefile
+    - name: Checkout duino_makefile
       uses: actions/checkout@v4
       with:
-        repository: dhylands/DuinoMakefile
-        path: libraries/DuinoMakefile
+        repository: dhylands/duino_makefile
+        path: libraries/duino_makefile
 
     - name: Install tools
       run: make BOARD=pico install-tools
