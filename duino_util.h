@@ -16,5 +16,4 @@
 
 #pragma once
 
-#include "src/TimedActionSequence.h"
-#include "src/Util.h"
+#include "src/duino_util.h"

@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Build duino_util
 
 on: [push, pull_request]
 
