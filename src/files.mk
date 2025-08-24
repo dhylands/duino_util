@@ -1,4 +1,4 @@
-DOC_EXCLUDE += include/duino_util/ScopeGuard.h
+DOC_EXCLUDE += src/duino_util/ScopeGuard.h
 
 SOURCES_CPP += \
 	AsciiHex.cpp \
