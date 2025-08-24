@@ -8,14 +8,14 @@
  *
  ****************************************************************************/
 /**
- *   @file   strncpy_s_Test.cpp
+ *   @file   duino_util.h
  *
- *   @brief  Tests for functions in AsciiHex.cpp
+ *   @brief  Arduino Utility functions
  *
  ****************************************************************************/
 
-#include <gtest/gtest.h>
+#pragma once
 
-#include "Util.h"
-
-TEST(strncpy_s_Test, Test) {}
+#include "duino_util/AsciiHex.h"
+#include "duino_util/TimedActionSequence.h"
+#include "duino_util/Util.h"

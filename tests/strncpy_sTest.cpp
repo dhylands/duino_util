@@ -16,7 +16,7 @@
 
 #include <gtest/gtest.h>
 
-#include "Util.h"
+#include "duino_util/Util.h"
 
 TEST(strncpy_sTest, ZeroDestTest) {
     char dst[16];

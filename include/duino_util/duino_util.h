@@ -16,6 +16,6 @@
 
 #pragma once
 
-#include "AsciiHex.h"
-#include "TimedActionSequence.h"
-#include "Util.h"
+#include "duino_util/AsciiHex.h"
+#include "duino_util/TimedActionSequence.h"
+#include "duino_util/Util.h"

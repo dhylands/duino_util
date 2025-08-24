@@ -16,4 +16,4 @@
 
 #pragma once
 
-#include "src/duino_util.h"
+#include "duino_util/duino_util.h"

@@ -14,7 +14,8 @@
  *
  ****************************************************************************/
 
-#include "millis.h"
+#include "test_millis.h"
+#include "duino_util/millis.h"
 
 uint32_t test_millis_count;
 

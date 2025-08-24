@@ -18,9 +18,10 @@
 
 #include <gtest/gtest.h>
 
-#include "TimedActionSequence.h"
+#include "duino_util/TimedActionSequence.h"
+#include "duino_util/Util.h"
+
 #include "test_millis.h"
-#include "Util.h"
 
 //! Actions to test timed sequences
 class TestClass {

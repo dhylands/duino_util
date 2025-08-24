@@ -16,6 +16,8 @@
 
 #pragma once
 
+#include <cstdint>
+
 //! The counter that millis returns.
 //! @details for unit tests, this allows the milliseconds to be controlled
 //!          very precisely.

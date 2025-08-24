@@ -14,7 +14,7 @@
  *
  ****************************************************************************/
 
-#include "AsciiHex.h"
+#include "duino_util/AsciiHex.h"
 
 #include <cassert>
 #include <cctype>

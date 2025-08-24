@@ -22,7 +22,7 @@
  *
  *****************************************************************************/
 
-#include "Crc8.h"
+#include "duino_util/Crc8.h"
 
 uint8_t Crc8(uint8_t crc, uint8_t data) {
     crc ^= data;

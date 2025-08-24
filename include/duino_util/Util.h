@@ -45,14 +45,16 @@ struct Bits {
     Bits() : value{} {}
 
     //! Constructor using an initial value.
-    Bits(const T& value  //!< [in] Initial value.
-         )
+    Bits(
+        const T& value  //!< [in] Initial value.
+        )
         : value{value} {}
 
     //! Checks if all of the bits in a mask are set.
     //! @returns true if all of the bits in `mask` are set.
     //! @returns false if any bits in `mask` are clear.
-    bool isSet(T mask  //!< [in] Mask to check.
+    bool isSet(
+        T mask  //!< [in] Mask to check.
     ) {
         return (this->value & mask) == mask;
     }
@@ -60,19 +62,22 @@ struct Bits {
     //! Checks if all of the bits in a mask are clear.
     //! @returns true if all of the bits in `mask` are set.
     //! @returns false if any bits in `mask` are clear.
-    bool isClear(T mask  //!< [in] Mask to check.
+    bool isClear(
+        T mask  //!< [in] Mask to check.
     ) {
         return (this->value & mask) == 0;
     }
 
     //! Sets all of the bits in a mask.
-    void set(T mask  //!< [in] Mask of bits to set.
+    void set(
+        T mask  //!< [in] Mask of bits to set.
     ) {
         this->value |= mask;
     }
 
     //! Clears all of the bits in a mask.
-    void clear(T mask  //!< [in] Mask of bits to set.
+    void clear(
+        T mask  //!< [in] Mask of bits to set.
     ) {
         this->value &= ~mask;
     }
@@ -125,7 +130,8 @@ int strncpy_s(
 //! @tparam ENUM - enumeration to get underlyng type of.
 //! @returns The value of the enumeration.
 template <typename ENUM>
-[[nodiscard]] constexpr auto to_underlying(ENUM const e  //!< [in] Enum to convert.
+[[nodiscard]] constexpr auto to_underlying(
+    ENUM const e  //!< [in] Enum to convert.
 ) {
     static_assert(std::is_enum_v<ENUM>);
     return static_cast<std::underlying_type_t<ENUM>>(e);

@@ -14,10 +14,10 @@
  *
  ****************************************************************************/
 
-#include "TimedActionSequence.h"
+#include "duino_util/TimedActionSequence.h"
 
-#include "millis.h"
-#include "Util.h"
+#include "duino_util/millis.h"
+#include "duino_util/Util.h"
 
 void TimedActionSequence::init() {
     this->seq_idx = -1;

@@ -14,11 +14,20 @@
  *
  ****************************************************************************/
 
-#include "millis.h"
+#include "duino_util/millis.h"
 
 #if defined(ARDUINO)
 
 // millis is defined in the Arduino Framework
+
+#elif defined(LIB_PICO_TIME)
+
+#include "pico/stdlib.h"
+#include "pico/time.h"
+
+uint32_t millis() {
+    return to_ms_since_boot(get_absolute_time());
+}
 
 #else
 

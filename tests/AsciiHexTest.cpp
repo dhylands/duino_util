@@ -16,7 +16,7 @@
 
 #include <gtest/gtest.h>
 
-#include "AsciiHex.h"
+#include "duino_util/AsciiHex.h"
 
 TEST(AsciiHexTest, NoDataTest) {
     auto bin = AsciiHexToBinary("");

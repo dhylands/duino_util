@@ -16,8 +16,8 @@
 
 #include <gtest/gtest.h>
 
-#include "Crc8.h"
-#include "Util.h"
+#include "duino_util/Crc8.h"
+#include "duino_util/Util.h"
 
 static uint8_t data[] = {0xca, 0xfc, 0x02, 0x00, 0x00};
 
